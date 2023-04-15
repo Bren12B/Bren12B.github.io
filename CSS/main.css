@@ -1,0 +1,209 @@
+body{
+    margin:0;
+    padding:0;
+    font-size: 13px ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;        /* Ancho: abarca de forma horizontal toda la página porque es 100%*/
+    height: 60px;       /* Alto: altura, de forma vertitcal que tan largo es*/ 
+}
+
+header nav{
+    display: flex;  /* Que se mueva acorde a las proporciones del navegador */
+    justify-content: flex-end;    /* se va al final de la página haciendolo de forma proporcional por si hay pantallas más grandes o más chicas*/
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none; /* Eliminar puntitos de lista*/
+    justify-content: center;
+    align-items: center;
+}
+        header nav .nav-right-section .Gmail:hover{
+            text-decoration:underline;
+        }
+        header nav .nav-right-section .Img:hover{
+            text-decoration:underline;
+        }
+        header nav .nav-right-section .menu:hover{  
+            border-radius: 50px;
+            box-shadow: 0 1px 5px 0 #20212447;
+            border-color: 1px solid #e8e8e840;
+        }
+        nav .nav-right-section img:hover{  
+            border-radius: 60px;
+            box-shadow: 0 5px 5px 0 #20212447;
+            border-color: 50px solid #c3c0c0;
+        }
+
+
+a{
+    text-decoration: none; /* Quitar la linea de abajo, que no aparezca siempre, solo cuando lo voy a seleccionar*/
+    cursor: pointer;
+}
+
+header nav .nav-right-section a{
+    margin-right: 25px;
+    color:black;
+}
+
+nav .nav-right-section .menu{
+    background-image: url('https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png');
+    width: 26px;
+    height: 26px;
+    background-size: contain; /**/
+    cursor: pointer;
+}
+
+nav .nav-right-section img{
+    border-radius: 60px;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+}
+
+main {
+    margin-top: 150px ;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+main .main-logo img{
+    width: 310px;
+    height: 110px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+main .main-input-container{
+    width: 500px;
+    border-radius: 80px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    border: none;
+    width: 450px;
+    height: 40px;
+    outline: none;
+}
+
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon{
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    background-repeat: no-repeat;
+    height: 15px;
+    margin-left: 20px;
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3128/3128290.png');
+    width: 25px;
+    height: 25px;   
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+main .main-input .cam-icon{
+    background-image: url('https://www.shutterstock.com/image-vector/kerala-india-february-23-2023-260nw-2266081455.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 25px;   
+    margin-right: 20px;   
+}
+
+main .main-buttons div{
+    display:inline-block
+}
+
+main .main-buttons button{
+    height: 36px;
+    border:none;
+    margin-left: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #f8f9fa;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+
+main .main-buttons button:hover{
+    background-color: rgba(156, 215, 252, 0.333);
+    box-shadow: 0 1px 5px 0 #20212447;
+    border-color: 1px solid #dadce0;
+    color:#202124
+    
+}
+
+main .text{
+    padding-top: 15px;
+}
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    font-size: 13px;
+    border-top: 1px solid #e4e4e4;
+/* footer dividido en columnas*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    bottom:0; /*ponerlo al final*/
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    color: #70757a;
+    margin:10;
+    padding-right: 25px;
+}
+
